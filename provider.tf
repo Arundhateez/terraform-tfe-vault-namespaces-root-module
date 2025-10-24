@@ -1,9 +1,12 @@
 terraform {
   cloud {
     organization = "HashiCorp_TFC_Automation_Demo"
+
+
     workspaces {
-      tags    = ["vault-configuration"]
-      project = "vault-configuration"
+      name = "hcp_workspace_vault_namespace_test1"
+      //tags    = ["vault-configuration"]
+      //project = "vault-configuration"
     }
   }
   required_providers {

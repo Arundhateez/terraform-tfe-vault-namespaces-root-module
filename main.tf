@@ -1,6 +1,6 @@
 module "vault-namespaces" {
-  source = "github.com/sce81/Terraform-Vault-Manage-Namespaces.git"
+  source = "github.com/sce81/terraform-vault-deploy-namespaces.git"
 
   namespace        = var.namespace
-  child_namespaces = var.child_namespaces
+  child_namespaces = toset(split(", ", var.child_namespaces))
 }
