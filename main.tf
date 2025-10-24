@@ -1,5 +1,6 @@
 module "vault-namespaces" {
-  source = "/Users/simon.elliott/Documents/Code/New_Structure/Terraform_Modules/TFE/Terraform-Vault-Manage-Namespaces"
+  source = "github.com/sce81/Terraform-Vault-Manage-Namespaces.git"
 
-  namespace = var.namespace
+  namespace        = var.namespace
+  child_namespaces = var.child_namespaces
 }

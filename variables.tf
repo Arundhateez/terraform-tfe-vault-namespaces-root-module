@@ -13,3 +13,8 @@ variable "namespace" {
   default     = null
   description = "Name of Namespace to deploy"
 }
+variable "child_namespaces" {
+  type        = string
+  default     = null
+  description = "Name of Namespace to deploy"
+}
