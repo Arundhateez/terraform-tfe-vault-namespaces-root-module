@@ -1,10 +1,10 @@
 terraform {
   cloud {
-    organization = "HashiCorp_TFC_Automation_Demo"
+    organization = "HashiCorp_AWS_Org"
 
 
     workspaces {
-      name = "hcp_workspace_vault_namespace_test1"
+      name = "hcp_workspace_vault_namespaces"
       //tags    = ["vault-configuration"]
       //project = "vault-configuration"
     }
