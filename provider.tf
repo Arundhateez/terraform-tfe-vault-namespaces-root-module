@@ -1,6 +1,6 @@
 terraform {
   cloud {
-    organization = "HashiCorp_AWS_Org"
+    organization = "LegalGeneral-OneTech"
 
 
     workspaces {
